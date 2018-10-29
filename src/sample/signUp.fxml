@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="640.0" style="-fx-background-color: #c0c0c0;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="400.0" prefWidth="640.0" style="-fx-background-color: #c0c0c0;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SignUp">
    <children>
       <Pane prefHeight="400.0" prefWidth="137.0" style="-fx-background-color: #48A5EA;">
          <children>
@@ -25,19 +25,19 @@
             <Font name="System Bold" size="17.0" />
          </font>
       </Label>
-      <TextField layoutX="153.0" layoutY="108.0" prefHeight="27.0" prefWidth="188.0" promptText="First Name" />
-      <TextField layoutX="153.0" layoutY="155.0" prefHeight="27.0" prefWidth="188.0" promptText="User ID" />
-      <TextField layoutX="153.0" layoutY="202.0" prefHeight="27.0" prefWidth="188.0" promptText="Address" />
-      <TextField layoutX="153.0" layoutY="249.0" prefHeight="27.0" prefWidth="188.0" promptText="Phone Number" />
-      <TextField layoutX="153.0" layoutY="296.0" prefHeight="27.0" prefWidth="188.0" promptText="Date of Birth" />
-      <TextField layoutX="364.0" layoutY="108.0" prefHeight="27.0" prefWidth="188.0" promptText="Last Name" />
-      <TextField layoutX="364.0" layoutY="155.0" prefHeight="27.0" prefWidth="188.0" promptText="Password" />
-      <TextField layoutX="364.0" layoutY="202.0" prefHeight="27.0" prefWidth="54.0" promptText="City" />
-      <TextField layoutX="364.0" layoutY="249.0" prefHeight="27.0" prefWidth="188.0" promptText="Email" />
-      <TextField layoutX="421.0" layoutY="202.0" prefHeight="27.0" prefWidth="54.0" promptText="State" />
-      <TextField layoutX="480.0" layoutY="202.0" prefHeight="27.0" prefWidth="74.0" promptText="Zip Code" />
-      <ComboBox layoutX="364.0" layoutY="296.0" prefHeight="27.0" prefWidth="74.0" promptText="Sex" />
-      <Button layoutX="153.0" layoutY="350.0" mnemonicParsing="false" text="Reset All" />
-      <Button layoutX="501.0" layoutY="350.0" mnemonicParsing="false" text="Submit" />
+      <TextField fx:id="firstName" layoutX="153.0" layoutY="108.0" prefHeight="27.0" prefWidth="188.0" promptText="First Name" />
+      <TextField fx:id="userID" layoutX="153.0" layoutY="155.0" prefHeight="27.0" prefWidth="188.0" promptText="User ID" />
+      <TextField fx:id="address" layoutX="153.0" layoutY="202.0" prefHeight="27.0" prefWidth="188.0" promptText="Address" />
+      <TextField fx:id="phoneNumber" layoutX="153.0" layoutY="249.0" prefHeight="27.0" prefWidth="188.0" promptText="Phone Number" />
+      <TextField fx:id="DOB" layoutX="153.0" layoutY="296.0" prefHeight="27.0" prefWidth="188.0" promptText="Date of Birth" />
+      <TextField fx:id="lastName" layoutX="364.0" layoutY="108.0" prefHeight="27.0" prefWidth="188.0" promptText="Last Name" />
+      <TextField fx:id="password" layoutX="364.0" layoutY="155.0" prefHeight="27.0" prefWidth="188.0" promptText="Password" />
+      <TextField fx:id="city" layoutX="364.0" layoutY="202.0" prefHeight="27.0" prefWidth="54.0" promptText="City" />
+      <TextField fx:id="email" layoutX="364.0" layoutY="249.0" prefHeight="27.0" prefWidth="188.0" promptText="Email" />
+      <TextField fx:id="state" layoutX="421.0" layoutY="202.0" prefHeight="27.0" prefWidth="54.0" promptText="State" />
+      <TextField fx:id="zipCode" layoutX="480.0" layoutY="202.0" prefHeight="27.0" prefWidth="74.0" promptText="Zip Code" />
+      <ComboBox fx:id="gender" layoutX="364.0" layoutY="296.0" prefHeight="27.0" prefWidth="74.0" promptText="Sex" />
+      <Button fx:id="resetButton" layoutX="153.0" layoutY="350.0" mnemonicParsing="false" onAction="#resetAll" text="Reset All" />
+      <Button fx:id="submitButton" layoutX="501.0" layoutY="350.0" mnemonicParsing="false" onAction="#submit" text="Submit" />
    </children>
 </AnchorPane>

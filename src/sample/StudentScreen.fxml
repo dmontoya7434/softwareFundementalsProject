@@ -8,16 +8,16 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #C0C0C0;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #C0C0C0;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.StudentScreen">
    <children>
       <Pane prefHeight="400.0" prefWidth="137.0" style="-fx-background-color: #48A5EA;">
          <children>
-            <TextField layoutX="11.0" layoutY="118.0" prefHeight="27.0" prefWidth="116.0" promptText="First Name">
+            <TextField layoutX="5.0" layoutY="118.0" prefHeight="27.0" prefWidth="116.0" promptText="First Name">
                <font>
                   <Font size="11.0" />
                </font>
             </TextField>
-            <TextField layoutX="11.0" layoutY="163.0" prefHeight="27.0" prefWidth="116.0" promptText="Apartment Number">
+            <TextField layoutX="5.0" layoutY="163.0" prefHeight="27.0" prefWidth="116.0" promptText="Apartment Number">
                <font>
                   <Font size="11.0" />
                </font>
@@ -37,6 +37,7 @@
                   <Font size="11.0" />
                </font>
             </Button>
+            <Button fx:id="logout" layoutX="34.0" layoutY="359.0" mnemonicParsing="false" onAction="#logOut" text="Log Out" />
          </children></Pane>
       <Text layoutX="239.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Community Events">
          <font>
