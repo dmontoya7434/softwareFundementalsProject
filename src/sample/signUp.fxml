@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
@@ -8,6 +10,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
+<?iimport javafx.collections.FXCollections ?>
 
 <AnchorPane prefHeight="400.0" prefWidth="640.0" style="-fx-background-color: #c0c0c0;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SignUp">
    <children>
@@ -36,8 +39,17 @@
       <TextField fx:id="email" layoutX="364.0" layoutY="249.0" prefHeight="27.0" prefWidth="188.0" promptText="Email" />
       <TextField fx:id="state" layoutX="421.0" layoutY="202.0" prefHeight="27.0" prefWidth="54.0" promptText="State" />
       <TextField fx:id="zipCode" layoutX="480.0" layoutY="202.0" prefHeight="27.0" prefWidth="74.0" promptText="Zip Code" />
-      <ComboBox fx:id="gender" layoutX="364.0" layoutY="296.0" prefHeight="27.0" prefWidth="74.0" promptText="Sex" />
+      <ComboBox fx:id="gender" layoutX="364.0" layoutY="296.0" prefHeight="27.0" prefWidth="74.0" promptText="Sex">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Male" />
+                <String fx:value="Female" />
+                <String fx:value="Rather Not Say" />
+            </FXCollections>
+         </items>
+      </ComboBox>
       <Button fx:id="resetButton" layoutX="153.0" layoutY="350.0" mnemonicParsing="false" onAction="#resetAll" text="Reset All" />
-      <Button fx:id="submitButton" layoutX="501.0" layoutY="350.0" mnemonicParsing="false" onAction="#submit" text="Submit" />
+      <Button fx:id="submitButton" layoutX="492.0" layoutY="350.0" mnemonicParsing="false" onAction="#submit" prefHeight="25.0" prefWidth="62.0" text="Submit" />
+      <Button fx:id="goBack" layoutX="153.0" layoutY="67.0" mnemonicParsing="false" onAction="#goBack" prefHeight="25.0" prefWidth="62.0" text="Back" />
    </children>
 </AnchorPane>

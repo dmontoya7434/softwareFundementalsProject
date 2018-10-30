@@ -32,6 +32,22 @@ public class NewAdmin {
     signUpScreen.show();
   }
 
+  public void viewPayments(ActionEvent event) throws Exception {
+
+    Parent viewPayments = FXMLLoader.load(getClass().getResource("AdminPayments.fxml"));
+    Stage signUpScreen = (Stage) ((Node) event.getSource()).getScene().getWindow();
+    signUpScreen.setScene(new Scene(viewPayments));
+    signUpScreen.show();
+  }
+
+  public void maintenance(ActionEvent event) throws Exception {
+
+    Parent maintenance = FXMLLoader.load(getClass().getResource("Maintenance.fxml"));
+    Stage signUpScreen = (Stage) ((Node) event.getSource()).getScene().getWindow();
+    signUpScreen.setScene(new Scene(maintenance));
+    signUpScreen.show();
+  }
+
   public void submitButton(ActionEvent event) throws Exception {
     Parent loginScreen = FXMLLoader.load(getClass().getResource("Admin.fxml"));
     Stage loginStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
