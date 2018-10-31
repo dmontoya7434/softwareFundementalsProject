@@ -6,15 +6,15 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.NewAdmin">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #c0c0c0;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.NewAdmin">
    <children>
       <Pane prefHeight="400.0" prefWidth="137.0" style="-fx-background-color: #48A5EA;">
          <children>
-            <Button layoutX="5.0" layoutY="108.0" mnemonicParsing="false" text="View Residents" />
-            <Button layoutX="5.0" layoutY="154.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="112.0" text="Create Events" />
-            <Button fx:id="viewPayments" layoutX="5.0" layoutY="200.0" mnemonicParsing="false" onAction="#viewPayments" text="View Payments" />
-            <Button fx:id="add" layoutX="6.0" layoutY="62.0" mnemonicParsing="false" onAction="#add" prefHeight="27.0" prefWidth="111.0" text="Add Admin" />
-            <Button fx:id="maintenance" layoutX="5.0" layoutY="249.0" mnemonicParsing="false" onAction="#maintenance" prefHeight="27.0" prefWidth="112.0" text="Maintenance" />
+            <Button fx:id="viewResidents" layoutX="5.0" layoutY="108.0" mnemonicParsing="false" onAction="#viewResidents" prefHeight="25.0" prefWidth="111.0" style="-fx-background-radius: 100;" text="View Residents" />
+            <Button fx:id="CreateEvent" layoutX="5.0" layoutY="154.0" mnemonicParsing="false" onAction="#CreateEvent" prefHeight="27.0" prefWidth="112.0" style="-fx-background-radius: 100;" text="Create Events" />
+            <Button fx:id="viewPayments" layoutX="5.0" layoutY="200.0" mnemonicParsing="false" onAction="#viewPayments" prefHeight="25.0" prefWidth="111.0" style="-fx-background-radius: 100;" text="View Payments" />
+            <Button fx:id="add" layoutX="6.0" layoutY="62.0" mnemonicParsing="false" onAction="#add" prefHeight="27.0" prefWidth="111.0" style="-fx-background-radius: 100;" text="Add Admin" />
+            <Button fx:id="maintenance" layoutX="5.0" layoutY="249.0" mnemonicParsing="false" onAction="#maintenance" prefHeight="27.0" prefWidth="112.0" style="-fx-background-radius: 100;" text="Maintenance" />
          </children></Pane>
       <Text layoutX="300.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin">
          <font>

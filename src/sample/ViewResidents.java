@@ -11,18 +11,17 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class CreateEvent {
-
+public class ViewResidents {
 
     @FXML
-    private Button back2;
+    private Button back3;
 
     @FXML
     void back(ActionEvent event) throws IOException {
-
         Parent loginScreen = FXMLLoader.load(getClass().getResource("Admin.fxml"));
         Stage loginStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         loginStage.setScene(new Scene(loginScreen));
         loginStage.show();
-}
+
+    }
 }

@@ -5,7 +5,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane fx:id="back" onDragDetected="#back" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AdminPayments">
    <children>
       <AnchorPane prefHeight="400.0" prefWidth="137.0" style="-fx-background-color: #48A5EA;" />
@@ -14,6 +13,6 @@
             <Font name="System Bold" size="24.0" />
          </font>
       </Text>
-      <Button fx:id="back1" layoutX="324.0" layoutY="290.0" mnemonicParsing="false" onAction="#back" text="Back" />
+      <Button fx:id="back1" layoutX="302.0" layoutY="288.0" mnemonicParsing="false" onAction="#back" prefHeight="25.0" prefWidth="85.0" style="-fx-background-radius: 100;" text="Back" />
    </children>
 </AnchorPane>

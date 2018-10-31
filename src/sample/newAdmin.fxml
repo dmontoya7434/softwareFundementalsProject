@@ -15,10 +15,11 @@
             <Font name="System Bold" size="36.0" />
          </font>
       </Text>
-      <TextField fx:id="firstName" alignment="CENTER" layoutX="197.0" layoutY="102.0" prefHeight="27.0" prefWidth="311.0" promptText="First Name, Last Name" />
-      <TextField fx:id="phonenumber" alignment="CENTER" layoutX="197.0" layoutY="144.0" prefHeight="27.0" prefWidth="311.0" promptText="Phone Number" />
-      <TextField fx:id="address" alignment="CENTER" layoutX="197.0" layoutY="187.0" prefHeight="27.0" prefWidth="311.0" promptText="Address" />
-      <TextField fx:id="email" alignment="CENTER" layoutX="197.0" layoutY="228.0" prefHeight="27.0" prefWidth="311.0" promptText="Email" />
-      <Button fx:id="submitButton" layoutX="321.0" layoutY="287.0" mnemonicParsing="false" onAction="#submitButton" text="Submit" />
+      <TextField fx:id="firstName" alignment="CENTER" layoutX="197.0" layoutY="102.0" prefHeight="27.0" prefWidth="311.0" promptText="First Name, Last Name" style="-fx-background-radius: 100;" />
+      <TextField fx:id="phonenumber" alignment="CENTER" layoutX="197.0" layoutY="144.0" prefHeight="27.0" prefWidth="311.0" promptText="Phone Number" style="-fx-background-radius: 100;" />
+      <TextField fx:id="address" alignment="CENTER" layoutX="197.0" layoutY="187.0" prefHeight="27.0" prefWidth="311.0" promptText="Address" style="-fx-background-radius: 100;" />
+      <TextField fx:id="email" alignment="CENTER" layoutX="197.0" layoutY="228.0" prefHeight="27.0" prefWidth="311.0" promptText="Email" style="-fx-background-radius: 100;" />
+      <Button fx:id="submitButton" layoutX="353.0" layoutY="288.0" mnemonicParsing="false" onAction="#submitButton" prefHeight="25.0" prefWidth="85.0" style="-fx-background-radius: 100;" text="Submit" />
+      <Button fx:id="backButton" layoutX="241.0" layoutY="288.0" mnemonicParsing="false" onAction="#goBack" prefHeight="25.0" prefWidth="85.0" style="-fx-background-radius: 100;" text="Back" />
    </children>
 </AnchorPane>
