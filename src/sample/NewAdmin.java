@@ -48,6 +48,9 @@ public class NewAdmin {
     signUpScreen.show();
   }
 
+
+
+
   public void submitButton(ActionEvent event) throws Exception {
     Parent loginScreen = FXMLLoader.load(getClass().getResource("Admin.fxml"));
     Stage loginStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
